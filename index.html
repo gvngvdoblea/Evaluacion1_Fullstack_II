@@ -3,18 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>El Bajón Urbano - Home</title>
+  <title>El Bajón Urbano - Inicio</title>
   <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-
 
   <header class="navbar">
     <div class="nav-contenedor">
       <div class="nav-grupo-izq">
         <a href="./index.html" class="logo">El Bajón Urbano</a>
         <nav class="nav-links" id="navLinks">
-          <a href="./index.html" class="btn-nav active">Home</a>
+          <a href="./index.html" class="btn-nav active">Inicio</a>
           <a href="./paginas/productos.html" class="btn-nav">Productos</a>
           <a href="./paginas/nosotros.html" class="btn-nav">Nosotros</a>
           <a href="./paginas/blogs.html" class="btn-nav">Blogs</a>
@@ -25,12 +24,11 @@
       <div class="nav-grupo-der">
         <a href="./paginas/login.html" class="btn-nav-accion">Iniciar sesión</a>
         <a href="./paginas/registro.html" class="btn-nav-accion">Registrar usuario</a>
-        <a href="./paginas/carrito.html" class="btn-nav-accion" id="btnCarrito">🛒 Carrito (<span id="cantCarrito">0</span>)</a>
+        <a href="./paginas/carrito.html" class="btn-nav-accion" id="btnCarrito">Carrito (<span id="cantCarrito">0</span>)</a>
         <button class="btn-menu" id="btnMenu">☰</button>
       </div>
     </div>
   </header>
-
 
   <section class="banner">
     <div class="banner-contenido">
@@ -42,39 +40,37 @@
 
   <main class="contenedor">
     
-
     <section id="menu">
       <h2>Productos Destacados</h2>
-      <div class="grid-productos" id="gridProductosHome">
+      <div class="grid-productos">
         
         <div class="tarjeta">
-          <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=400&q=80" alt="Hamburguesa Clásica">
+          <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500" alt="Hamburguesa Clásica">
           <h3>Hamburguesa Clásica</h3>
           <p class="descripcion">Carne 100% vacuno, doble queso cheddar y lechuga.</p>
           <span class="precio">$5.990</span>
-          <a href="./paginas/detalleProducto.html?id=1" class="btn-secundario" style="display:block; margin-top:8px;">Ver detalle</a>
+          <a href="./paginas/detalleProducto.html" class="btn-secundario" style="display:block; margin-top:8px;">Ver detalle</a>
         </div>
 
         <div class="tarjeta">
-          <img src="https://images.unsplash.com/photo-1619740455993-9e612b1af08a?auto=format&fit=crop&w=400&q=80" alt="Completo Italiano">
+          <img src="https://images.unsplash.com/photo-1619740455993-9e612b1af08a?w=500" alt="Completo Italiano">
           <h3>Completo Italiano</h3>
           <p class="descripcion">Vienesa tradicional, tomate, palta natural y mayo.</p>
           <span class="precio">$2.990</span>
-          <a href="./paginas/detalleProducto.html?id=2" class="btn-secundario" style="display:block; margin-top:8px;">Ver detalle</a>
+          <a href="./paginas/detalleProducto.html" class="btn-secundario" style="display:block; margin-top:8px;">Ver detalle</a>
         </div>
 
         <div class="tarjeta">
-          <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=400&q=80" alt="Papas Cheddar Bacon">
+          <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=500" alt="Papas Cheddar Bacon">
           <h3>Papas Cheddar Bacon</h3>
           <p class="descripcion">Papas rústicas con salsa cheddar y tocino crocante.</p>
           <span class="precio">$4.500</span>
-          <a href="./paginas/detalleProducto.html?id=3" class="btn-secundario" style="display:block; margin-top:8px;">Ver detalle</a>
+          <a href="./paginas/detalleProducto.html" class="btn-secundario" style="display:block; margin-top:8px;">Ver detalle</a>
         </div>
 
       </div>
     </section>
 
-    
     <section id="horarios" class="seccion-tabla">
       <h2>Horarios de Atención</h2>
       <table>
@@ -107,7 +103,6 @@
 
   </main>
 
-  
   <footer class="pie-pagina-completo">
     <div class="contenedor-footer">
       <div class="columna-footer">
@@ -126,16 +121,16 @@
 
       <div class="columna-footer">
         <h4>Boletín</h4>
-        <p>Suscríbete a nuestro Newsletter:</p>
-        <form class="form-newsletter" id="formNewsletter">
-          <input type="email" placeholder="Enter Email" required>
-          <button type="submit">Subscribe</button>
+        <p>Suscríbete para recibir nuestras promos:</p>
+        <form class="form-newsletter">
+          <input type="email" placeholder="Ingresa tu correo" required>
+          <button type="submit">Suscribirse</button>
         </form>
       </div>
     </div>
 
     <div class="copy-final">
-      <p>&copy; 2026 El Bajón Urbano. Todos los derechos reservados.</p>
+      <p>2026 El Bajón Urbano. Todos los derechos reservados.</p>
     </div>
   </footer>
 
