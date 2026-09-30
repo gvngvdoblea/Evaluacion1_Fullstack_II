@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crear Usuario - El Bajón Urbano</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="nav-contenedor">
+      <div class="nav-grupo-izq">
+        <a href="../index.html" class="logo">El Bajón Urbano</a>
+      </div>
+
+      <div class="nav-grupo-der">
+        <a href="../index.html" class="btn-nav">Inicio</a>
+        <a href="../index.html#menu" class="btn-nav">Carta</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="contenedor-login">
+    <div class="tarjeta-login">
+      <h2>Crear Cuenta</h2>
+      <p class="subtitulo-login">Regístrate para realizar tus pedidos</p>
+      
+      <form class="formulario" id="formRegistro">
+        <div class="campo-grupo">
+          <label for="nombre">Nombre Completo</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre y apellido" required>
+        </div>
+
+        <div class="campo-grupo">
+          <label for="reg-email">Correo Electrónico</label>
+          <input type="email" id="reg-email" name="email" placeholder="ejemplo@correo.com" required>
+        </div>
+
+        <div class="campo-grupo">
+          <label for="telefono">Teléfono</label>
+          <input type="tel" id="telefono" name="telefono" placeholder="+56 9 1234 5678" required>
+        </div>
+
+        <div class="campo-grupo">
+          <label for="reg-password">Contraseña</label>
+          <input type="password" id="reg-password" name="password" placeholder="Crea tu contraseña" required>
+        </div>
+
+        <button type="submit" class="btn-login">Registrarse</button>
+      </form>
+
+      <p class="pie-login">¿Ya tienes una cuenta? <a href="./crearUsuario.html">Inicia sesión aquí</a></p>
+    </div>
+  </main>
+
+  <footer class="pie-pagina-completo">
+    <div class="copy-final" style="margin-top: 0; border-top: none;">
+      <p>&copy; 2026 El Bajón Urbano. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

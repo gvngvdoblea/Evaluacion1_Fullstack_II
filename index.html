@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El Bajón Urbano - Home</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+
+  <header class="navbar">
+    <div class="nav-contenedor">
+      <div class="nav-grupo-izq">
+        <a href="./index.html" class="logo">El Bajón Urbano</a>
+        <nav class="nav-links" id="navLinks">
+          <a href="./index.html" class="btn-nav active">Home</a>
+          <a href="./paginas/productos.html" class="btn-nav">Productos</a>
+          <a href="./paginas/nosotros.html" class="btn-nav">Nosotros</a>
+          <a href="./paginas/blogs.html" class="btn-nav">Blogs</a>
+          <a href="./paginas/contacto.html" class="btn-nav">Contacto</a>
+        </nav>
+      </div>
+
+      <div class="nav-grupo-der">
+        <a href="./paginas/login.html" class="btn-nav-accion">Iniciar sesión</a>
+        <a href="./paginas/registro.html" class="btn-nav-accion">Registrar usuario</a>
+        <a href="./paginas/carrito.html" class="btn-nav-accion" id="btnCarrito">🛒 Carrito (<span id="cantCarrito">0</span>)</a>
+        <button class="btn-menu" id="btnMenu">☰</button>
+      </div>
+    </div>
+  </header>
+
+
+  <section class="banner">
+    <div class="banner-contenido">
+      <h1>TIENDA ONLINE</h1>
+      <p>Comida rápida casera con ingredientes frescos y preparación al instante.</p>
+      <a href="./paginas/productos.html" class="btn-accion">Ver productos</a>
+    </div>
+  </section>
+
+  <main class="contenedor">
+    
+
+    <section id="menu">
+      <h2>Productos Destacados</h2>
+      <div class="grid-productos" id="gridProductosHome">
+        
+        <div class="tarjeta">
+          <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=400&q=80" alt="Hamburguesa Clásica">
+          <h3>Hamburguesa Clásica</h3>
+          <p class="descripcion">Carne 100% vacuno, doble queso cheddar y lechuga.</p>
+          <span class="precio">$5.990</span>
+          <a href="./paginas/detalleProducto.html?id=1" class="btn-secundario" style="display:block; margin-top:8px;">Ver detalle</a>
+        </div>
+
+        <div class="tarjeta">
+          <img src="https://images.unsplash.com/photo-1619740455993-9e612b1af08a?auto=format&fit=crop&w=400&q=80" alt="Completo Italiano">
+          <h3>Completo Italiano</h3>
+          <p class="descripcion">Vienesa tradicional, tomate, palta natural y mayo.</p>
+          <span class="precio">$2.990</span>
+          <a href="./paginas/detalleProducto.html?id=2" class="btn-secundario" style="display:block; margin-top:8px;">Ver detalle</a>
+        </div>
+
+        <div class="tarjeta">
+          <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=400&q=80" alt="Papas Cheddar Bacon">
+          <h3>Papas Cheddar Bacon</h3>
+          <p class="descripcion">Papas rústicas con salsa cheddar y tocino crocante.</p>
+          <span class="precio">$4.500</span>
+          <a href="./paginas/detalleProducto.html?id=3" class="btn-secundario" style="display:block; margin-top:8px;">Ver detalle</a>
+        </div>
+
+      </div>
+    </section>
+
+    
+    <section id="horarios" class="seccion-tabla">
+      <h2>Horarios de Atención</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Día</th>
+            <th>Apertura</th>
+            <th>Cierre</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Lunes a Jueves</td>
+            <td>18:00</td>
+            <td>01:00</td>
+          </tr>
+          <tr>
+            <td>Viernes y Sábado</td>
+            <td>18:00</td>
+            <td>04:00</td>
+          </tr>
+          <tr>
+            <td>Domingo</td>
+            <td>18:00</td>
+            <td>00:00</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+  </main>
+
+  
+  <footer class="pie-pagina-completo">
+    <div class="contenedor-footer">
+      <div class="columna-footer">
+        <h4>El Bajón Urbano</h4>
+        <p>Comida rápida casera con preparación al instante.</p>
+      </div>
+
+      <div class="columna-footer">
+        <h4>Categorías</h4>
+        <ul>
+          <li><a href="./paginas/productos.html">Hamburguesas</a></li>
+          <li><a href="./paginas/productos.html">Completos</a></li>
+          <li><a href="./paginas/productos.html">Papas Fritas</a></li>
+        </ul>
+      </div>
+
+      <div class="columna-footer">
+        <h4>Boletín</h4>
+        <p>Suscríbete a nuestro Newsletter:</p>
+        <form class="form-newsletter" id="formNewsletter">
+          <input type="email" placeholder="Enter Email" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="copy-final">
+      <p>&copy; 2026 El Bajón Urbano. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>

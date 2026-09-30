@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panel Administrador - El Bajón Urbano</title>
+  <link rel="stylesheet" href="../../css/styles.css">
+  <style>
+    /* Estilos para el layaut del adm */
+    .admin-layout {
+      display: flex;
+      min-height: 100vh;
+    }
+    .sidebar {
+      width: 240px;
+      background-color: #000;
+      border-right: 1px solid var(--color-borde);
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    .sidebar a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px;
+      border-radius: 4px;
+      font-size: 14px;
+      transition: background 0.2s;
+    }
+    .sidebar a:hover, .sidebar a.active {
+      background-color: var(--color-primario);
+    }
+    .admin-content {
+      flex: 1;
+      padding: 30px;
+      background-color: var(--color-fondo);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="admin-layout">
+    <!-- sidebar -->
+    <aside class="sidebar">
+      <h2 style="font-size: 18px; color: var(--color-acento); margin-bottom: 20px;">ADMIN PANEL</h2>
+      <a href="./index.html" class="active">Dashboard</a>
+      <a href="./productos.html">Mantenedor Productos</a>
+      <a href="./usuarios.html">Mantenedor Usuarios</a>
+      <hr style="border-color: var(--color-borde); margin: 10px 0;">
+      <a href="../../index.html" style="color: var(--color-texto-secundario);">Volver a la Tienda</a>
+    </aside>
+
+    <!-- contenido del panel -->
+    <main class="admin-content">
+      <h1 style="color: var(--color-primario); margin-bottom: 10px;">¡HOLA Administrador!</h1>
+      <p style="color: var(--color-texto-secundario); margin-bottom: 30px;">Bienvenido al centro de gestión de El Bajón Urbano.</p>
+
+      <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+        <div style="background: var(--color-tarjeta); border: 1px solid var(--color-borde); padding: 20px; border-radius: 8px; flex: 1; min-width: 200px;">
+          <h3>Productos Registrados</h3>
+          <p style="font-size: 32px; font-weight: bold; color: var(--color-acento); margin-top: 10px;">3</p>
+        </div>
+        <div style="background: var(--color-tarjeta); border: 1px solid var(--color-borde); padding: 20px; border-radius: 8px; flex: 1; min-width: 200px;">
+          <h3>Usuarios Activos</h3>
+          <p style="font-size: 32px; font-weight: bold; color: var(--color-acento); margin-top: 10px;">2</p>
+        </div>
+      </div>
+    </main>
+  </div>
+
+</body>
+</html>

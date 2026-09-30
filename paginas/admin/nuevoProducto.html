@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nuevo Producto - Admin</title>
+  <link rel="stylesheet" href="../../css/styles.css">
+  <style>
+    .admin-layout { display: flex; min-height: 100vh; }
+    .sidebar { width: 240px; background-color: #000; border-right: 1px solid var(--color-borde); padding: 20px; display: flex; flex-direction: column; gap: 15px; }
+    .sidebar a { color: #fff; text-decoration: none; padding: 10px; border-radius: 4px; font-size: 14px; }
+    .sidebar a:hover, .sidebar a.active { background-color: var(--color-primario); }
+    .admin-content { flex: 1; padding: 30px; background-color: var(--color-fondo); }
+  </style>
+</head>
+<body>
+
+  <div class="admin-layout">
+    <aside class="sidebar">
+      <h2 style="font-size: 18px; color: var(--color-acento); margin-bottom: 20px;">ADMIN PANEL</h2>
+      <a href="./index.html">Dashboard</a>
+      <a href="./productos.html" class="active">Mantenedor Productos</a>
+      <a href="./usuarios.html">Mantenedor Usuarios</a>
+      <hr style="border-color: var(--color-borde); margin: 10px 0;">
+      <a href="../../index.html" style="color: var(--color-texto-secundario);">Volver a la Tienda</a>
+    </aside>
+
+    <main class="admin-content">
+      <h1 style="color: var(--color-primario); margin-bottom: 20px;">NUEVO PRODUCTO</h1>
+
+      <div style="max-width: 600px; background: var(--color-tarjeta); padding: 25px; border-radius: 8px; border: 1px solid var(--color-borde);">
+        <form id="formNuevoProducto" novalidate>
+          
+          <div class="campo-grupo">
+            <label for="codigoProd">Código de Producto (Mínimo 3 caracteres)*</label>
+            <input type="text" id="codigoProd" placeholder="Ej: PRD004" required>
+            <span class="msj-error" id="error-codigoProd"></span>
+          </div>
+
+          <div class="campo-grupo">
+            <label for="nombreProd">Nombre del Producto*</label>
+            <input type="text" id="nombreProd" maxlength="100" placeholder="Nombre comercial" required>
+            <span class="msj-error" id="error-nombreProd"></span>
+          </div>
+
+          <div class="campo-grupo">
+            <label for="descProd">Descripción (Opcional, máx 500)</label>
+            <textarea id="descProd" maxlength="500" rows="3" style="width:100%; background:#2a2a2a; border:1px solid var(--color-borde); color:#fff; border-radius:5px; padding:10px; font-size:14px; outline:none;"></textarea>
+          </div>
+
+          <div class="campo-grupo">
+            <label for="precioProd">Precio ($)* (Mínimo 0 = GRATIS)</label>
+            <input type="number" id="precioProd" min="0" step="0.01" placeholder="5990" required>
+            <span class="msj-error" id="error-precioProd"></span>
+          </div>
+
+          <div class="campo-grupo">
+            <label for="stockProd">Stock (Número entero >= 0)*</label>
+            <input type="number" id="stockProd" min="0" step="1" placeholder="10" required>
+            <span class="msj-error" id="error-stockProd"></span>
+          </div>
+
+          <div class="campo-grupo">
+            <label for="stockCriticoProd">Stock Crítico (Opcional)</label>
+            <input type="number" id="stockCriticoProd" min="0" step="1" placeholder="3">
+          </div>
+
+          <button type="submit" class="btn-login" style="margin-top: 15px;">GUARDAR PRODUCTO</button>
+        </form>
+      </div>
+    </main>
+  </div>
+
+  <script src="../../js/main.js"></script>
+</body>
+</html>

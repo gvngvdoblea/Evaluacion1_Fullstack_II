@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - El Bajón Urbano</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+ 
+  <header class="navbar">
+    <div class="nav-contenedor">
+      <div class="nav-grupo-izq">
+        <a href="../index.html" class="logo">El Bajón Urbano</a>
+        <nav class="nav-links" id="navLinks">
+          <a href="../index.html" class="btn-nav">Home</a>
+          <a href="./productos.html" class="btn-nav">Productos</a>
+          <a href="./nosotros.html" class="btn-nav">Nosotros</a>
+          <a href="./blogs.html" class="btn-nav">Blogs</a>
+          <a href="./contacto.html" class="btn-nav active">Contacto</a>
+        </nav>
+      </div>
+
+      <div class="nav-grupo-der">
+        <a href="./login.html" class="btn-nav-accion">Iniciar sesión</a>
+        <a href="./registro.html" class="btn-nav-accion">Registrar usuario</a>
+        <a href="./carrito.html" class="btn-nav-accion" id="btnCarrito">🛒 Carrito (<span id="cantCarrito">0</span>)</a>
+        <button class="btn-menu" id="btnMenu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Formulario -->
+  <main class="contenedor-login">
+    <div class="tarjeta-login">
+      <h2>FORMULARIO DE CONTACTO</h2>
+      <p class="subtitulo-login">Envíanos tus dudas o sugerencias</p>
+      
+      <form class="formulario" id="formContacto" novalidate>
+        
+        <div class="campo-grupo">
+          <label for="contacto-nombre">Nombre Completo*</label>
+          <input type="text" id="contacto-nombre" maxlength="100" placeholder="Tu nombre completo" required>
+          <span class="msj-error" id="error-contacto-nombre"></span>
+        </div>
+
+        <div class="campo-grupo">
+          <label for="contacto-email">Correo Electrónico (Opcional)</label>
+          <input type="email" id="contacto-email" maxlength="100" placeholder="ejemplo@duoc.cl">
+          <span class="msj-error" id="error-contacto-email"></span>
+        </div>
+
+        <div class="campo-grupo">
+          <label for="contacto-comentario">Comentario / Mensaje*</label>
+          <textarea id="contacto-comentario" maxlength="500" rows="5" placeholder="Escribe tu mensaje aquí..." style="width:100%; background:#2a2a2a; border:1px solid var(--color-borde); color:#fff; border-radius:5px; padding:10px; font-size:14px; outline:none;" required></textarea>
+          <span class="msj-error" id="error-contacto-comentario"></span>
+        </div>
+
+        <button type="submit" class="btn-login">ENVIAR MENSAJE</button>
+      </form>
+    </div>
+  </main>
+
+
+  <footer class="pie-pagina-completo">
+    <div class="copy-final">
+      <p>&copy; 2026 El Bajón Urbano. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

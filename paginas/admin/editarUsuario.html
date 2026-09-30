@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Editar Usuario - Admin</title>
+  <link rel="stylesheet" href="../../css/styles.css">
+  <style>
+    .admin-layout { display: flex; min-height: 100vh; }
+    .sidebar { width: 240px; background-color: #000; border-right: 1px solid var(--color-borde); padding: 20px; display: flex; flex-direction: column; gap: 15px; }
+    .sidebar a { color: #fff; text-decoration: none; padding: 10px; border-radius: 4px; font-size: 14px; }
+    .sidebar a:hover, .sidebar a.active { background-color: var(--color-primario); }
+    .admin-content { flex: 1; padding: 30px; background-color: var(--color-fondo); }
+  </style>
+</head>
+<body>
+
+  <div class="admin-layout">
+    <aside class="sidebar">
+      <h2 style="font-size: 18px; color: var(--color-acento); margin-bottom: 20px;">ADMIN PANEL</h2>
+      <a href="./index.html">Dashboard</a>
+      <a href="./productos.html">Mantenedor Productos</a>
+      <a href="./usuarios.html" class="active">Mantenedor Usuarios</a>
+      <hr style="border-color: var(--color-borde); margin: 10px 0;">
+      <a href="../../index.html" style="color: var(--color-texto-secundario);">Volver a la Tienda</a>
+    </aside>
+
+    <main class="admin-content">
+      <h1 style="color: var(--color-primario); margin-bottom: 20px;">EDITAR USUARIO</h1>
+
+      <div style="max-width: 600px; background: var(--color-tarjeta); padding: 25px; border-radius: 8px; border: 1px solid var(--color-borde);">
+        <form id="formEditarUsuario" novalidate>
+          
+          <div class="campo-grupo">
+            <label for="edit-admin-run">RUN*</label>
+            <input type="text" id="edit-admin-run" value="19011022K" required>
+          </div>
+
+          <div class="campo-grupo">
+            <label for="edit-admin-nombre">Nombre y Apellido*</label>
+            <input type="text" id="edit-admin-nombre" value="Ismael Pérez" required>
+          </div>
+
+          <div class="campo-grupo">
+            <label for="edit-admin-email">Correo Electrónico*</label>
+            <input type="email" id="edit-admin-email" value="admin@duoc.cl" required>
+          </div>
+
+          <div class="campo-grupo">
+            <label for="edit-selectTipoUsuario">Tipo de Usuario (Rol)*</label>
+            <select id="edit-selectTipoUsuario" required>
+              <option value="Administrador" selected>Administrador</option>
+              <option value="Vendedor">Vendedor</option>
+              <option value="Cliente">Cliente</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn-login" style="margin-top: 15px;">ACTUALIZAR USUARIO</button>
+        </form>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    document.getElementById("formEditarUsuario").addEventListener("submit", (e) => {
+      e.preventDefault();
+      alert("¡Usuario actualizado correctamente!");
+      window.location.href = "./usuarios.html";
+    });
+  </script>
+</body>
+</html>

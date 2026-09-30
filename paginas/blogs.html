@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blogs - El Bajón Urbano</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+  
+  <header class="navbar">
+    <div class="nav-contenedor">
+      <div class="nav-grupo-izq">
+        <a href="../index.html" class="logo">El Bajón Urbano</a>
+        <nav class="nav-links" id="navLinks">
+          <a href="../index.html" class="btn-nav">Home</a>
+          <a href="./productos.html" class="btn-nav">Productos</a>
+          <a href="./nosotros.html" class="btn-nav">Nosotros</a>
+          <a href="./blogs.html" class="btn-nav active">Blogs</a>
+          <a href="./contacto.html" class="btn-nav">Contacto</a>
+        </nav>
+      </div>
+
+      <div class="nav-grupo-der">
+        <a href="./login.html" class="btn-nav-accion">Iniciar sesión</a>
+        <a href="./registro.html" class="btn-nav-accion">Registrar usuario</a>
+        <a href="./carrito.html" class="btn-nav-accion" id="btnCarrito">🛒 Carrito (<span id="cantCarrito">0</span>)</a>
+        <button class="btn-menu" id="btnMenu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  
+  <main class="contenedor">
+    <h1 style="text-align: center; margin-bottom: 30px; color: var(--color-primario);">NOTICIAS IMPORTANTES</h1>
+
+    <div style="display: flex; flex-direction: column; gap: 25px;">
+      
+      <!-- blog 1 -->
+      <div class="tarjeta" style="width: 100%; display: flex; flex-wrap: wrap; text-align: left; overflow: hidden;">
+        <div style="flex: 1; min-width: 280px; padding: 25px;">
+          <h2>CASO CURIOSO #1</h2>
+          <p style="color: var(--color-texto-secundario); margin: 15px 0;">
+            ¿Sabías cuál es el secreto de la salsa de la casa de El Bajón Urbano? Descubre la historia detrás de nuestra receta tradicional.
+          </p>
+          <a href="./detalleBlog1.html" class="btn-accion">VER CASO</a>
+        </div>
+        <div style="flex: 1; min-width: 280px;">
+          <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=600&q=80" alt="Caso 1" style="width: 100%; height: 100%; min-height: 200px; object-fit: cover;">
+        </div>
+      </div>
+
+      <!-- blog 2 -->
+      <div class="tarjeta" style="width: 100%; display: flex; flex-wrap: wrap; text-align: left; overflow: hidden;">
+        <div style="flex: 1; min-width: 280px; padding: 25px;">
+          <h2>CASO CURIOSO #2</h2>
+          <p style="color: var(--color-texto-secundario); margin: 15px 0;">
+            El origen del Completo Italiano en Chile y cómo logramos perfeccionar la proporción entre palta, tomate y mayo casera.
+          </p>
+          <a href="./detalleBlog2.html" class="btn-accion">VER CASO</a>
+        </div>
+        <div style="flex: 1; min-width: 280px;">
+          <img src="https://images.unsplash.com/photo-1619740455993-9e612b1af08a?auto=format&fit=crop&w=600&q=80" alt="Caso 2" style="width: 100%; height: 100%; min-height: 200px; object-fit: cover;">
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  
+  <footer class="pie-pagina-completo">
+    <div class="copy-final">
+      <p>&copy; 2026 El Bajón Urbano. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrito de Compras - El Bajón Urbano</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+  
+  <header class="navbar">
+    <div class="nav-contenedor">
+      <div class="nav-grupo-izq">
+        <a href="../index.html" class="logo">El Bajón Urbano</a>
+        <nav class="nav-links" id="navLinks">
+          <a href="../index.html" class="btn-nav">Home</a>
+          <a href="./productos.html" class="btn-nav">Productos</a>
+          <a href="./nosotros.html" class="btn-nav">Nosotros</a>
+          <a href="./blogs.html" class="btn-nav">Blogs</a>
+          <a href="./contacto.html" class="btn-nav">Contacto</a>
+        </nav>
+      </div>
+
+      <div class="nav-grupo-der">
+        <a href="./login.html" class="btn-nav-accion">Iniciar sesión</a>
+        <a href="./registro.html" class="btn-nav-accion">Registrar usuario</a>
+        <a href="./carrito.html" class="btn-nav-accion active" id="btnCarrito">🛒 Carrito (<span id="cantCarrito">0</span>)</a>
+        <button class="btn-menu" id="btnMenu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- vista del carro de compras -->
+  <main class="contenedor">
+    <h1 style="text-align: center; margin-bottom: 25px; color: var(--color-primario);">Mi Carrito de Compras</h1>
+
+    <div style="display: flex; flex-wrap: wrap; gap: 30px;">
+      
+      <!-- listado de productos -->
+      <div style="flex: 2; min-width: 300px;" id="listaCarritoContenedor">
+        <p style="color: var(--color-texto-secundario); text-align: center; padding: 40px; background: var(--color-tarjeta); border-radius: 8px; border: 1px solid var(--color-borde);">Cargando productos...</p>
+      </div>
+
+      <!-- resumen y pago del producto -->
+      <div style="flex: 1; min-width: 260px; background-color: var(--color-tarjeta); padding: 20px; border-radius: 8px; border: 1px solid var(--color-borde); height: fit-content;">
+        <h2 style="text-align: left; margin-bottom: 15px; border-bottom: 1px solid var(--color-borde); padding-bottom: 10px;">TOTAL</h2>
+        
+        <p style="font-size: 24px; font-weight: bold; color: var(--color-acento); margin-bottom: 20px;" id="totalPagar">$0</p>
+
+        <div class="campo-grupo" style="margin-bottom: 15px;">
+          <label for="cupon">Ingresa el cupón de descuento:</label>
+          <div style="display: flex; gap: 8px;">
+            <input type="text" id="cupon" placeholder="CUPON10">
+            <button class="btn-nav" type="button" onclick="aplicarCupon()">APLICAR</button>
+          </div>
+        </div>
+
+        <button class="btn-login" style="background-color: #28a745;" onclick="procesarPago()">PAGAR</button>
+      </div>
+
+    </div>
+  </main>
+
+  
+  <footer class="pie-pagina-completo">
+    <div class="copy-final">
+      <p>&copy; 2026 El Bajón Urbano. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

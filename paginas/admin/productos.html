@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mantenedor Productos - Admin</title>
+  <link rel="stylesheet" href="../../css/styles.css">
+  <style>
+    .admin-layout { display: flex; min-height: 100vh; }
+    .sidebar { width: 240px; background-color: #000; border-right: 1px solid var(--color-borde); padding: 20px; display: flex; flex-direction: column; gap: 15px; }
+    .sidebar a { color: #fff; text-decoration: none; padding: 10px; border-radius: 4px; font-size: 14px; }
+    .sidebar a:hover, .sidebar a.active { background-color: var(--color-primario); }
+    .admin-content { flex: 1; padding: 30px; background-color: var(--color-fondo); }
+  </style>
+</head>
+<body>
+
+  <div class="admin-layout">
+    <aside class="sidebar">
+      <h2 style="font-size: 18px; color: var(--color-acento); margin-bottom: 20px;">ADMIN PANEL</h2>
+      <a href="./index.html">Dashboard</a>
+      <a href="./productos.html" class="active">Mantenedor Productos</a>
+      <a href="./usuarios.html">Mantenedor Usuarios</a>
+      <hr style="border-color: var(--color-borde); margin: 10px 0;">
+      <a href="../../index.html" style="color: var(--color-texto-secundario);">Volver a la Tienda</a>
+    </aside>
+
+    <main class="admin-content">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+        <h1 style="color: var(--color-primario);">MANTENEDOR PRODUCTOS</h1>
+        <a href="./nuevoProducto.html" class="btn-accion">+ NUEVO PRODUCTO</a>
+      </div>
+
+      <div class="seccion-tabla" style="margin-top:0;">
+        <table>
+          <thead>
+            <tr>
+              <th>Código</th>
+              <th>Nombre</th>
+              <th>Precio</th>
+              <th>Stock</th>
+              <th>Stock Crítico</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>PRD001</td>
+              <td>Hamburguesa Clásica</td>
+              <td>$5.990</td>
+              <td>15</td>
+              <td>5</td>
+              <td>
+                <a href="./editarProducto.html?id=1" class="btn-secundario" style="font-size:12px; padding:4px 8px;">Editar</a>
+              </td>
+            </tr>
+            <tr>
+              <td>PRD002</td>
+              <td>Completo Italiano</td>
+              <td>$2.990</td>
+              <td>3</td>
+              <td>5</td>
+              <td>
+                <span style="color: #ff4d4d; font-weight: bold; margin-right: 5px;">¡STOCK CRÍTICO!</span>
+                <a href="./editarProducto.html?id=2" class="btn-secundario" style="font-size:12px; padding:4px 8px;">Editar</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </div>
+
+</body>
+</html>
